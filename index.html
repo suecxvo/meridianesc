@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeridianESC Cloud Systems</title>
+    <link rel="stylesheet" href="/style.css"> <!-- Absolute path for sub-folder support -->
+    <!-- Allow indexing to look like a legitimate business site -->
+    <meta name="robots" content="index, follow">
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+</head>
+<body class="locked">
+    <div id="app">
+        
+        <!-- 1. Safe Page / Compliance Content (High Quality Corporate Template) -->
+        <div id="safe-content">
+            <header>
+                <div class="logo">MeridianESC Cloud Systems</div>
+                <nav>
+                    <a href="#">Home</a>
+                    <a href="#features">Services</a>
+                    <a href="#hero">Cloud Infrastructure</a>
+                    <a href="#stats">Performance</a>
+                    <a href="#footer">Contact</a>
+                </nav>
+            </header>
+            
+            <section id="hero" class="hero">
+                <div class="hero-content">
+                    <h1>Accelerating Digital Transformation</h1>
+                    <p class="subtitle">Empowering enterprises with next-generation cloud architecture and AI-driven analytics.</p>
+                    <div class="cta-group">
+                        <button class="primary">Get Started</button>
+                        <button class="secondary">View Case Studies</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="stats" class="stats">
+                <div class="stat-item"><strong>500+</strong><span>Enterprise Clients</span></div>
+                <div class="stat-item"><strong>99.99%</strong><span>Uptime SLA</span></div>
+                <div class="stat-item"><strong>24/7</strong><span>Global Support</span></div>
+            </section>
+
+            <section id="features" class="features">
+                <div class="card">
+                    <h3>Cloud Migration</h3>
+                    <p>Seamlessly transition your legacy systems to a scalable, secure cloud environment with zero downtime.</p>
+                </div>
+                <div class="card">
+                    <h3>Data Security</h3>
+                    <p>Bank-grade encryption and ISO 27001 compliant protocols ensuring your data sovereignty.</p>
+                </div>
+                <div class="card">
+                    <h3>AI Integration</h3>
+                    <p>Leverage our proprietary machine learning models to unlock actionable insights from your data.</p>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <h2>Why Choose MeridianESC?</h2>
+                <p>With over a decade of experience in high-performance computing, we understand the unique challenges of modern digital infrastructure. Our mission is to provide robust, scalable solutions that grow with your business.</p>
+            </section>
+            
+            <footer id="footer">
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                    <a href="#">Sitemap</a>
+                </div>
+                <p>&copy; 2026 MeridianESC Cloud Systems. All rights reserved.</p>
+                <p class="address">1200 Tech Plaza, Silicon Valley, CA 94025, USA</p>
+            </footer>
+        </div>
+
+        <!-- 2. Security Overlay (The only thing Humans interact with) -->
+        <div class="gate-overlay">
+            <div class="gate-box">
+                <!-- Turnstile Widget Container -->
+                <div id="captcha-container" style="min-height: 65px; margin: 10px auto;"></div>
+            </div>
+        </div>
+
+        <main id="secure-content" class="hidden"></main>
+    </div>
+
+    <!-- Security Logic -->
+    <script src="/guard.js" type="module"></script> <!-- Absolute path for sub-folder support -->
+</body>
+</html>
