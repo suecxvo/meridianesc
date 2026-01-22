@@ -29,7 +29,7 @@ async function boot() {
   }
 
   turnstile.render("#captcha-container", {
-    sitekey: "0x4AAAAAACN4ebRWQhDuAqeS", // Updated from user screenshot
+    sitekey: "0x4AAAAAACOJ2avJMZojZEp8", // Updated from user screenshot
     callback: async (token) => {
       await fetchContent(token);
     },
