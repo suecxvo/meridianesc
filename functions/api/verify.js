@@ -6,7 +6,7 @@ export async function onRequestPost({ request, env }) {
         // 1. Turnstile Validation
         const ip = request.headers.get('CF-Connecting-IP');
         const formData = new FormData();
-        formData.append('secret', env.TURNSTILE_SECRET);
+        formData.append('secret', env.meridianesc_SECRET);
         formData.append('response', tokenToken);
         formData.append('remoteip', ip);
 
